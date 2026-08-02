@@ -1,6 +1,6 @@
 # Politique de confidentialité — easyglide keyboard
 
-**Dernière mise à jour : 2 août 2026**
+**Dernière mise à jour : 3 août 2026**
 **Éditeur : Le Marquis Solutions**
 **Contact : contact@lemarquis.blog**
 
@@ -40,7 +40,7 @@ localement, dans l'espace de stockage privé de l'application :
 | **Réglages** | Langues actives, thème, couleurs, hauteur des touches, son, vibrations, correction automatique, mode une main. |
 | **Emoji récents** | Les derniers emoji utilisés, pour les proposer en tête. |
 | **Raccourcis de texte** | Les abréviations que vous définissez vous-même. |
-| **Historique du presse-papiers** | Les 20 derniers éléments copiés, plus ceux que vous épinglez, pour le panneau de collage rapide. |
+| **Historique du presse-papiers** | Jusqu'à 20 éléments copiés, **effacés au bout d'une heure**, plus ceux que vous épinglez. Les contenus qui ressemblent à un secret ne sont jamais enregistrés. |
 
 Ces données **ne quittent jamais l'appareil**. Elles ne sont pas chiffrées
 séparément : elles reposent sur le chiffrement du système iOS, actif dès lors
@@ -80,14 +80,26 @@ le pourrait pas, l'application n'ayant aucune capacité réseau.
 ## Presse-papiers
 
 Le panneau de collage rapide lit le presse-papiers du système pour vous
-proposer ce que vous venez de copier, et en conserve les 20 derniers éléments
-sur l'appareil.
+proposer ce que vous venez de copier.
 
-**Le presse-papiers peut contenir des données sensibles** — un mot de passe
-copié depuis un gestionnaire, un numéro de carte. Ces éléments seraient alors
-conservés localement dans cette liste. Vous pouvez les supprimer un par un
-depuis le panneau. Rien n'est transmis, mais nous préférons vous le dire
-clairement.
+**Le presse-papiers contient parfois des données sensibles** — un mot de passe
+sorti d'un gestionnaire, un code reçu par SMS, un numéro de carte. Trois
+protections s'appliquent :
+
+1. **Contenu marqué comme secret.** Les gestionnaires de mots de passe
+   (1Password, Bitwarden et d'autres) signalent leurs copies par une marque
+   normalisée. Quand elle est présente, l'élément n'est jamais enregistré.
+2. **Contenu qui a l'allure d'un secret.** Numéro de carte bancaire (validé par
+   sa clé de contrôle), code de vérification à 4-8 chiffres, IBAN, et toute
+   chaîne d'un seul tenant mêlant majuscules, minuscules, chiffres et symboles
+   — le profil d'un mot de passe généré. Ces contenus ne sont jamais
+   enregistrés. Ils restent collables normalement : seule leur MÉMORISATION est
+   refusée.
+3. **Effacement automatique.** Les éléments non épinglés disparaissent au bout
+   d'**une heure**. Ceux que vous épinglez restent, parce que c'est un choix
+   explicite de votre part.
+
+Vous pouvez aussi les supprimer un par un depuis le panneau.
 
 ---
 
@@ -137,7 +149,7 @@ contact@lemarquis.blog
 
 # Privacy Policy — easyglide keyboard
 
-**Last updated: 2 August 2026**
+**Last updated: 3 August 2026**
 **Publisher: Le Marquis Solutions**
 **Contact: contact@lemarquis.blog**
 
@@ -169,7 +181,7 @@ app's private storage:
 | **Settings** | Active languages, theme, colours, key height, sound, haptics, autocorrection, one-handed mode. |
 | **Recent emoji** | Your most recently used emoji, shown first. |
 | **Text shortcuts** | Abbreviations you define yourself. |
-| **Clipboard history** | The last 20 copied items, plus any you pin, for the quick-paste panel. |
+| **Clipboard history** | Up to 20 copied items, **erased after one hour**, plus any you pin. Content that looks like a secret is never recorded. |
 
 This data **never leaves the device**. It is not separately encrypted: it relies
 on iOS system encryption, active whenever your device has a passcode.
@@ -199,13 +211,23 @@ no networking capability.
 
 ## Clipboard
 
-The quick-paste panel reads the system clipboard to offer what you just copied,
-and keeps the last 20 items on the device.
+The quick-paste panel reads the system clipboard to offer what you just copied.
 
-**The clipboard can contain sensitive data** — a password copied from a manager,
-a card number. Such items would then be kept locally in that list. You can delete
-them individually from the panel. Nothing is transmitted, but we would rather say
-so plainly.
+**The clipboard sometimes contains sensitive data** — a password from a manager,
+a code received by SMS, a card number. Three protections apply:
+
+1. **Content marked as secret.** Password managers (1Password, Bitwarden and
+   others) flag their copies with a standard marker. When present, the item is
+   never recorded.
+2. **Content that looks like a secret.** Payment card numbers (validated by
+   their checksum), 4-8 digit verification codes, IBANs, and any unbroken string
+   mixing upper case, lower case, digits and symbols — the profile of a
+   generated password. These are never recorded. They remain pasteable as usual:
+   only their STORAGE is refused.
+3. **Automatic erasure.** Unpinned items disappear after **one hour**. Pinned
+   items stay, because pinning is an explicit choice.
+
+You can also delete them individually from the panel.
 
 ## Spell checking
 
